@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixabay Image Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="mainHeader">Pixabay Image Search</h1>
+    
+    <div class="inputFeild">
+        <input id="searchInput" type="text" name="search">
+        <select name="colors" id="colorList">
+            <option value="any color">any color</option>
+            <option value="grayscale">grayscale</option>
+            <option value="transparent">transparent</option>
+            <option value="red">red</option>
+            <option value="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+            <option value="turquoise">turquoise</option>
+            <option value="blue">blue</option>
+            <option value="lilac">lilac</option>
+            <option value="pink">pink</option>
+            <option value="white">white</option>
+            <option value="gray">gray</option>
+            <option value="black">black</option>
+            <option value="brown">brown</option>
+        </select>
+        <input type="submit" value="Submit" onclick="getPictures()">
+    </div>
+
+    <div id="pictureContainer">
+        <ul id="picture">
+        </ul>
+    </div>
+
+    <footer id="footerButtons">
+        <button type="button" id="previous" onclick="previousPage()">&laquo; Previous</button>
+        <button type="button" id="next" onclick="nextPage()">Next &raquo;</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
